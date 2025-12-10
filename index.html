@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Food Ordering Website</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+ <h1>Responsible Food Ordering</h1>
+</header>
+<section id="menu">
+ <h2>Menu</h2>
+ <div class="item">
+ <p>Pizza - ₹150</p>
+ <button onclick="addToCart(150)">Add</button>
+ </div>
+ <div class="item">
+ <p>Burger - ₹80</p>
+ <button onclick="addToCart(80)">Add</button>
+ </div>
+ <div class="item">
+ <p>Sandwich - ₹100</p>
+ <button onclick="addToCart(100)">Add</button>
+ </div>
+</section>
+<section id="cart">
+ <h2>Your Order</h2>
+ <p>Total Amount: ₹<span id="total">0</span></p>
+ <button id="orderBtn">Place Order</button>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
